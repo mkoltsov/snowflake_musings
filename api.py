@@ -2,9 +2,9 @@
 from snowflake.snowpark import Session
 # create a dictionary with the connection parameters
 connection_parameters_dict = {
-    "account": "MTLPIOD-XTC20354", # replace with your Snowflake account
-    "user": "Intimatik", # replace with your username
-    "password": "aZ5^YP$kuKtP$bB3", # replace with your password
+    "account": ", # replace with your Snowflake account
+    "user": "", # replace with your username
+    "password": "", # replace with your password
     "role": "SYSADMIN",
     "warehouse": "BAKERY_WH",
     "database": "BAKERY_DB",
@@ -18,4 +18,5 @@ ts = my_session.sql("select delivery_date, baked_good_type, sum(quantity) as tot
 # print the output to the console
 print(ts)
 # close the session
+
 my_session.close()
